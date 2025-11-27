@@ -75,15 +75,34 @@ Arayüzü (shell modunda) çalıştırmak ve geliştirmeye başlamak için aşa�
 
 Projenin ihtiyaç duyduğu tüm `node` paketlerini ve bağımlılıkları sisteme yükleyin. Bu komut, `package.json` dosyasını okuyarak gerekli tüm modülleri `node_modules` klasörüne kuracaktır.
 
+## 🛠️ 5. Kurulum ve Başlatma Protokolü (Deployment)
+
+Arayüzü (shell modunda) çalıştırmak ve geliştirmeye başlamak için aşağıdaki adımları izleyin.
+
+### **Gereksinimler**
+- [Node.js](https://nodejs.org/en/) (v18+)
+- [npm](https://www.npmjs.com/) / [yarn](https://yarnpkg.com/)
+
+### **Kurulum Adımları**
+
+**🚀 Adım 1: Bağımlılıkları Yükle (Install Dependencies)**
+
+Projenin ihtiyaç duyduğu tüm `node` paketlerini ve bağımlılıkları sisteme yükleyin. Bu komut, `package.json` dosyasını okuyarak gerekli tüm modülleri `node_modules` klasörüne kuracaktır.
+
 ```bash
-npm install
-🔒 Adım 2: Çekirdek Doğrulama (Core Verification)
-Bu adım, projenin mimarisini anlamak için kritik öneme sahiptir. Sistemi tam potansiyeliyle kullanmak ve gerçek verileri işlemek için, bu arayüzle iletişim kuracak olan kendi backend.py dosyanızı oluşturup ana dizine yerleştirmeniz gerekmektedir.
-Not: Bu dosya olmadan, bir sonraki adımda çalıştıracağınız komut, sadece sahte verilerle çalışan (varsa) veya tamamen işlevsiz, boş bir arayüz (shell) başlatacaktır.
-⚡ Adım 3: Sistemi Ateşle (Ignite the System)
+npm install```
+
+**🔒 Adım 2: Çekirdek Doğrulama (Core Verification)**
+
+Bu adım, projenin mimarisini anlamak için kritik öneme sahiptir. Sistemi tam potansiyeliyle kullanmak ve gerçek verileri işlemek için, bu arayüzle iletişim kuracak olan kendi `backend.py` dosyanızı oluşturup ana dizine yerleştirmeniz gerekmektedir.
+
+> **Not:** Bu dosya olmadan, bir sonraki adımda çalıştıracağınız komut, sadece sahte verilerle çalışan (varsa) veya tamamen işlevsiz, boş bir arayüz (shell) başlatacaktır.
+
+**⚡ Adım 3: Sistemi Ateşle (Ignite the System)**
+
 Gerekli kurulumlar tamamlandıktan sonra, Vite geliştirme sunucusunu başlatarak arayüzü yerel makinenizde çalıştırın.
-code
-Bash
+
+```bash
 npm run dev
 Bu komut, genellikle http://localhost:5173 adresinde projenizi ayağa kaldıracaktır.
 <div align="center">
@@ -95,3 +114,4 @@ Bu komut, genellikle http://localhost:5173 adresinde projenizi ayağa kaldıraca
 SYSTEM ID: X-UNDEFINED | NO LOGS KEPT
 </p>
 </div>
+```
