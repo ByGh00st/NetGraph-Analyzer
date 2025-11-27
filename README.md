@@ -1,51 +1,53 @@
-<div align="center">
-
-<img width="1200" height="475" alt="SystemBanner" src="https://i.hizliresim.com/8ercp73.png" />
-
-# ⚡ GHOST PROTOCOL: INTERFACE
-### Secure Data Transmission & Visualization Layer
-
+div align="center">
+<img width="1200" height="475" alt="NetGraph Analyzer System Banner" src="https://i.hizliresim.com/8ercp73.png" />
+⚡ GHOST PROTOCOL: INTERFACE
+Güvenli Veri İletişimi ve Görselleştirme Arayüzü (Secure Data Transmission & Visualization Layer)
 <!-- Steril, Yüksek Güvenlikli Rozetler -->
 <p>
-  <img src="https://img.shields.io/badge/Security-Level_5-critical?style=for-the-badge&logo=shield&logoColor=white" alt="Security Level" />
-  <img src="https://img.shields.io/badge/Core-backend.py_Locked-red?style=for-the-badge&logo=python&logoColor=white" alt="Backend Lock" />
-  <img src="https://img.shields.io/badge/System-By_Ghost-black?style=for-the-badge" alt="By Ghost" />
+<img src="https://img.shields.io/badge/Security-Level_5-critical?style=for-the-badge&logo=shield&logoColor=white" alt="Security Level 5" />
+<img src="https://img.shields.io/badge/Core-backend.py_Locked-red?style=for-the-badge&logo=python&logoColor=white" alt="Backend Core Locked" />
+<img src="https://img.shields.io/badge/System-By_Ghost-black?style=for-the-badge" alt="Architected by ByGhost" />
 </p>
-
 </div>
-
----
-
-## ⚠️ KRİTİK GÜVENLİK UYARISI
-
-**Bu sistem, standart bir frontend yapısı değildir.**
-Çalışma zamanı güvenliği (Runtime Security) ve veri şifreleme protokolleri doğrudan **`backend.py`** modülü üzerinden yürütülür.
-
-> **❗ DİKKAT:** `backend.py` dosyası, sistemin omurgasıdır. Bu dosya eksikse, silinmişse veya manipüle edilmişse; sistem kendini kilitler ve **hiçbir arayüz yanıt vermez.** Güvenlik amacıyla tüm API anahtarları ve bağlantı köprüleri bu dosya içine gömülmüş ve şifrelenmiştir.
-
----
-
-## 🛠️ Başlatma Protokolü (Deployment)
-
-Sistemi güvenli modda ayağa kaldırmak için aşağıdaki sırayı takip edin.
-
-### 🚀 Adım 1: Modül Entegrasyonu
-Gerekli node paketlerini sisteme yükleyin:
-```bash
+📖 1. Projenin Amacı ve Felsefesi
+NetGraph-Analyzer, karmaşık ağ verilerini analiz etmek, siber güvenlik operasyonlarını izlemek ve elde edilen sonuçları anlaşılır bir arayüz üzerinden görselleştirmek için tasarlanmış modüler bir frontend katmanıdır. Bu proje, ham veriyi anlamlı ve eyleme geçirilebilir istihbarata dönüştürmeyi hedefler.
+Projenin temel felsefesi, güçlü bir backend motoru ile güvenli ve izole bir frontend arayüzünü birbirinden ayırmaktır. Sunulan bu arayüz, backend'den gelen şifreli veri akışını işlemek ve görselleştirmek üzere optimize edilmiştir.
+✨ 2. Temel Özellikler
+Gerçek Zamanlı Görselleştirme: Backend'den gelen verileri anlık olarak grafiklere, tablolara ve ağ haritalarına dönüştürür.
+Güvenli İletişim Protokolü: Arayüz, backend.py ile sadece şifrelenmiş ve doğrulanmış veri paketleri üzerinden haberleşir.
+Modüler Komponent Yapısı: React ve TypeScript ile geliştirilen arayüz, yeni analiz modüllerinin kolayca entegre edilebilmesi için tasarlanmıştır.
+Detaylı Analiz Panelleri: IP izleme, paket analizi, DNS sorguları ve anomali tespiti gibi farklı operasyonlar için özelleştirilmiş gösterge panelleri sunar.
+⚠️ 3. Mimarinin Kalbi ve KRİTİK GÜVENLİK UYARISI
+Bu projenin halka açık olarak sunulması, bilinçli bir mimari karardır. Sistemin tüm işlevselliği, veri işleme mantığı ve güvenlik protokolleri, projenin beyni ve motoru olan backend.py dosyası içinde yer alır.
+❗ DİKKAT: backend.py dosyası, potansiyel kötüye kullanımı önlemek ve projenin etik sınırlar içinde kalmasını sağlamak amacıyla bu repoya DAHİL EDİLMEMİŞTİR.
+Bu dosya olmadan, arayüz sadece boş bir kabuk (shell) olarak çalışır ve hiçbir veri işleyemez. Sistemin omurgası olan bu dosya; API anahtarlarını, şifreleme algoritmalarını ve hedefle iletişim kurallarını içerir. backend.py olmadan sistem, güvenlik amacıyla kendini kilitleyerek herhangi bir yanıt vermeyecektir. Bu, tasarım gereğidir.
+💻 4. Teknoloji Yığını (Tech Stack)
+Bu arayüzün geliştirilmesinde kullanılan teknolojiler:
+Frontend: TypeScript, React, Vite, Axios
+Backend (Konsept): Python, Flask/FastAPI, Socket.IO, Pandas (Veri Analizi için)
+Stil & Tasarım: CSS Modules, Framer Motion
+🛠️ 5. Kurulum ve Başlatma Protokolü (Deployment)
+Arayüzü (shell modunda) çalıştırmak ve geliştirmeye başlamak için aşağıdaki adımları izleyin.
+Gereksinimler
+Node.js (v18+)
+npm / yarn
+Kurulum Adımları
+🚀 Adım 1: Modül Entegrasyonu
+Gerekli node paketlerini ve bağımlılıkları sisteme yükleyin:
+code
+Bash
 npm install
 🔒 Adım 2: Çekirdek Doğrulama (Security Check)
-Sistemi başlatmadan önce backend.py dosyasının ana dizinde olduğundan emin olun.
-Bu dosya olmadan npm run dev komutu sadece boş bir kabuk (shell) çalıştırır.
-⚡ Adım 3: Sistemi Ateşle
-Güvenlik protokolü doğrulandıktan sonra arayüzü başlatın:
+Bu, projenin tam fonksiyonel hali için bir simülasyon adımıdır. Sistemi tam potansiyeliyle kullanmak için kendi backend.py dosyanızı oluşturup ana dizine yerleştirmeniz ve arayüz ile arasındaki veri köprüsünü kurmanız gerekmektedir. Bu dosya olmadan npm run dev komutu, sadece sahte verilerle çalışan veya boş bir arayüz başlatacaktır.
+⚡ Adım 3: Sistemi Ateşle (Arayüzü Başlat)
+Gerekli kurulumlar tamamlandıktan sonra, geliştirme sunucusunu başlatarak arayüzü çalıştırın:
 code
 Bash
 npm run dev
-```
 <div align="center">
 🛡️ ARCHITECTED BY GHOST
-<a href="https://byghost.tr" style="text-decoration: none;">
-<img src="https://img.shields.io/badge/Official_Site-byghost.tr-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="byghost.tr" />
+<a href="https://byghost.tr" target="_blank" rel="noopener" style="text-decoration: none;">
+<img src="https://img.shields.io/badge/Official_Site-byghost.tr-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="byghost.tr Official Website" />
 </a>
 <p style="color: #666; font-size: 12px; margin-top: 10px;">
 SYSTEM ID: X-UNDEFINED | NO LOGS KEPT
