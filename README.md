@@ -2,7 +2,7 @@ code
 Markdown
 <div align="center">
 
-<img width="1200" height="475" alt="SystemBanner" src="https://byghost.tr/favicon.png" />
+<img width="1200" height="475" alt="SystemBanner" src="https://i.hizliresim.com/8ercp73.png" />
 
 # ⚡ Neural Core Interface
 ### Next-Gen System Deployment
