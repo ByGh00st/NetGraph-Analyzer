@@ -90,7 +90,7 @@ Arayüzü (shell modunda) çalıştırmak ve geliştirmeye başlamak için aşa�
 Projenin ihtiyaç duyduğu tüm `node` paketlerini ve bağımlılıkları sisteme yükleyin. Bu komut, `package.json` dosyasını okuyarak gerekli tüm modülleri `node_modules` klasörüne kuracaktır.
 
 ```bash
-npm install```
+npm install
 
 **🔒 Adım 2: Çekirdek Doğrulama (Core Verification)**
 
