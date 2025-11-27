@@ -102,9 +102,10 @@ Bu adım, projenin mimarisini anlamak için kritik öneme sahiptir. Sistemi tam 
 
 Gerekli kurulumlar tamamlandıktan sonra, Vite geliştirme sunucusunu başlatarak arayüzü yerel makinenizde çalıştırın.
 
-```bash
+bash
 npm run dev
 Bu komut, genellikle http://localhost:5173 adresinde projenizi ayağa kaldıracaktır.
+```
 <div align="center">
 🛡️ ARCHITECTED BY GHOST
 <a href="https://byghost.tr" target="_blank" rel="noopener" style="text-decoration: none;">
@@ -114,4 +115,4 @@ Bu komut, genellikle http://localhost:5173 adresinde projenizi ayağa kaldıraca
 SYSTEM ID: X-UNDEFINED | NO LOGS KEPT
 </p>
 </div>
-```
+
