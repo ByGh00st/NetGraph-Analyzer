@@ -67,7 +67,7 @@ Arayüzü (shell modunda) çalıştırmak ve geliştirmeye başlamak için aşa�
 Gerekli node paketlerini ve bağımlılıkları sisteme yükleyin:
 ```bash
 npm install
-```
+
 🔒 Adım 2: Çekirdek Doğrulama (Security Check)
 Bu, projenin tam fonksiyonel hali için bir simülasyon adımıdır. Sistemi tam potansiyeliyle kullanmak için kendi backend.py dosyanızı oluşturup ana dizine yerleştirmeniz ve arayüz ile arasındaki veri köprüsünü kurmanız gerekmektedir. Bu dosya olmadan npm run dev komutu, sadece sahte verilerle çalışan veya boş bir arayüz başlatacaktır.
 ⚡ Adım 3: Sistemi Ateşle (Arayüzü Başlat)
@@ -75,6 +75,7 @@ Gerekli kurulumlar tamamlandıktan sonra, geliştirme sunucusunu başlatarak ara
 code
 Bash
 npm run dev
+```
 <div align="center">
 🛡️ ARCHITECTED BY GHOST
 <a href="https://byghost.tr" target="_blank" rel="noopener" style="text-decoration: none;">
