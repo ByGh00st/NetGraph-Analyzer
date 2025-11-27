@@ -1,0 +1,5 @@
+{
+  "name": "NetGuard Pro - Network Monitor",
+  "description": "High-performance network traffic analysis, attack detection (DoS, ARP, Port Scan), and topology visualization dashboard.",
+  "requestFramePermissions": []
+}
