@@ -41,6 +41,7 @@ Güvenlik protokolü doğrulandıktan sonra arayüzü başlatın:
 code
 Bash
 npm run dev
+```
 <div align="center">
 🛡️ ARCHITECTED BY GHOST
 <a href="https://byghost.tr" style="text-decoration: none;">
