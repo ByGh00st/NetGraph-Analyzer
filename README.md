@@ -61,21 +61,31 @@ Arayüzü (shell modunda) çalıştırmak ve geliştirmeye başlamak için aşa�
 - [Node.js](https://nodejs.org/en/) (v18+)
 - [npm](https://www.npmjs.com/) / [yarn](https://yarnpkg.com/)
 
+## 🛠️ 5. Kurulum ve Başlatma Protokolü (Deployment)
+
+Arayüzü (shell modunda) çalıştırmak ve geliştirmeye başlamak için aşağıdaki adımları izleyin.
+
+### **Gereksinimler**
+- [Node.js](https://nodejs.org/en/) (v18+)
+- [npm](https://www.npmjs.com/) / [yarn](https://yarnpkg.com/)
+
 ### **Kurulum Adımları**
 
-**🚀 Adım 1: Modül Entegrasyonu**
-Gerekli node paketlerini ve bağımlılıkları sisteme yükleyin:
+**🚀 Adım 1: Bağımlılıkları Yükle (Install Dependencies)**
+
+Projenin ihtiyaç duyduğu tüm `node` paketlerini ve bağımlılıkları sisteme yükleyin. Bu komut, `package.json` dosyasını okuyarak gerekli tüm modülleri `node_modules` klasörüne kuracaktır.
+
 ```bash
 npm install
-
-🔒 Adım 2: Çekirdek Doğrulama (Security Check)
-Bu, projenin tam fonksiyonel hali için bir simülasyon adımıdır. Sistemi tam potansiyeliyle kullanmak için kendi backend.py dosyanızı oluşturup ana dizine yerleştirmeniz ve arayüz ile arasındaki veri köprüsünü kurmanız gerekmektedir. Bu dosya olmadan npm run dev komutu, sadece sahte verilerle çalışan veya boş bir arayüz başlatacaktır.
-⚡ Adım 3: Sistemi Ateşle (Arayüzü Başlat)
-Gerekli kurulumlar tamamlandıktan sonra, geliştirme sunucusunu başlatarak arayüzü çalıştırın:
+🔒 Adım 2: Çekirdek Doğrulama (Core Verification)
+Bu adım, projenin mimarisini anlamak için kritik öneme sahiptir. Sistemi tam potansiyeliyle kullanmak ve gerçek verileri işlemek için, bu arayüzle iletişim kuracak olan kendi backend.py dosyanızı oluşturup ana dizine yerleştirmeniz gerekmektedir.
+Not: Bu dosya olmadan, bir sonraki adımda çalıştıracağınız komut, sadece sahte verilerle çalışan (varsa) veya tamamen işlevsiz, boş bir arayüz (shell) başlatacaktır.
+⚡ Adım 3: Sistemi Ateşle (Ignite the System)
+Gerekli kurulumlar tamamlandıktan sonra, Vite geliştirme sunucusunu başlatarak arayüzü yerel makinenizde çalıştırın.
 code
 Bash
 npm run dev
-```
+Bu komut, genellikle http://localhost:5173 adresinde projenizi ayağa kaldıracaktır.
 <div align="center">
 🛡️ ARCHITECTED BY GHOST
 <a href="https://byghost.tr" target="_blank" rel="noopener" style="text-decoration: none;">
