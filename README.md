@@ -90,7 +90,9 @@ Arayüzü (shell modunda) çalıştırmak ve geliştirmeye başlamak için aşa�
 Projenin ihtiyaç duyduğu tüm `node` paketlerini ve bağımlılıkları sisteme yükleyin. Bu komut, `package.json` dosyasını okuyarak gerekli tüm modülleri `node_modules` klasörüne kuracaktır.
 
 ```bash
-npm install
+git clone https://github.com/ByGh00st/NetGraph-Analyzer
+cd NetGraph-Analyzer
+npm install 
 
 **🔒 Adım 2: Çekirdek Doğrulama (Core Verification)**
 
@@ -105,7 +107,7 @@ iletişim kuracak olan kendi `backend.py` dosyanızı oluşturup ana dizine yerl
 
 Gerekli kurulumlar tamamlandıktan sonra, Vite geliştirme sunucusunu başlatarak arayüzü yerel makinenizde çalıştırın.
 
-bash
+
 npm run dev
 Bu komut, genellikle http://localhost:5173 adresinde projenizi ayağa kaldıracaktır.
 ```
