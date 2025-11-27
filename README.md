@@ -94,9 +94,12 @@ npm install
 
 **🔒 Adım 2: Çekirdek Doğrulama (Core Verification)**
 
-Bu adım, projenin mimarisini anlamak için kritik öneme sahiptir. Sistemi tam potansiyeliyle kullanmak ve gerçek verileri işlemek için, bu arayüzle iletişim kuracak olan kendi `backend.py` dosyanızı oluşturup ana dizine yerleştirmeniz gerekmektedir.
+Bu adım, projenin mimarisini anlamak için kritik öneme sahiptir.
+Sistemi tam potansiyeliyle kullanmak ve gerçek verileri işlemek için, bu arayüzle
+iletişim kuracak olan kendi `backend.py` dosyanızı oluşturup ana dizine yerleştirmeniz gerekmektedir.
 
-> **Not:** Bu dosya olmadan, bir sonraki adımda çalıştıracağınız komut, sadece sahte verilerle çalışan (varsa) veya tamamen işlevsiz, boş bir arayüz (shell) başlatacaktır.
+> **Not:** Bu dosya olmadan, bir sonraki adımda
+çalıştıracağınız komut, sadece sahte verilerle çalışan (varsa) veya tamamen işlevsiz, boş bir arayüz (shell) başlatacaktır.
 
 **⚡ Adım 3: Sistemi Ateşle (Ignite the System)**
 
