@@ -1,5 +1,4 @@
-code
-Markdown
+@Developer ByGhost | byghost.tr
 <div align="center">
 
 <img width="1200" height="475" alt="SystemBanner" src="https://i.hizliresim.com/8ercp73.png" />
